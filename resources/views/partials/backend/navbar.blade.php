@@ -37,7 +37,7 @@ $company = App\Models\Company::first();
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                    <img src="{{ asset('all/'. $company->logo) }}" class="avatar img-fluid rounded" alt="Roxy Paint" style="width: 150px !important; " />
+                    <img src="{{ asset('all/'. $company->logo) }}" class="avatar img-fluid rounded" alt="casino king" style="width: 150px !important; " />
                     <div class="icon-container">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
