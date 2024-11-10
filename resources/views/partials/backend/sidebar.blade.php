@@ -134,12 +134,6 @@
                 </a>
             </li>
 
-            {{-- <li class="sidebar-item">
-                <a href="{{ route('about') }}" class="sidebar-link">
-                    <i class="fa-solid fa-user-tie"></i> <span class="align-middle">About Us</span>
-                </a>
-            </li> --}}
-
             <li class="sidebar-header">
                 Company Setup
             </li>
