@@ -56,10 +56,10 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a data-bs-target="#home" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                <a data-bs-target="#withdrow" data-bs-toggle="collapse" class="sidebar-link collapsed">
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Withdrow</span>
                 </a>
-                <ul id="home" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                <ul id="withdrow" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="#">Sliders</a>
                     </li>
                     <li class="sidebar-item"><a class="sidebar-link" href="#">Depots</a></li>
@@ -67,10 +67,10 @@
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a data-bs-target="#home" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                <a data-bs-target="#user" data-bs-toggle="collapse" class="sidebar-link collapsed">
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">User</span>
                 </a>
-                <ul id="home" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                <ul id="user" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="#">Sliders</a>
                     </li>
                     <li class="sidebar-item"><a class="sidebar-link" href="#">Depots</a></li>
