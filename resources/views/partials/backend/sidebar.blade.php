@@ -40,56 +40,105 @@
             </div>
         </div>
 
-        {{-- one --}}
-
-
-
         <ul class="sidebar-nav">
             <li class="sidebar-header">
                 Pages
             </li>
             <li class="sidebar-item active">
-                {{-- one --}}
                 <a href="{{ route('admin.dashboard') }}" class="sidebar-link">
                     <i class="align-middle" data-feather="sliders"></i> 
                     <span class="align-middle">Dashboards</span>
                 </a>
             </li>
-            <li class="sidebar-item">
-                <a data-bs-target="#withdrow" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Withdrow</span>
-                </a>
-                <ul id="withdrow" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Sliders</a>
-                    </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Depots</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Concern</a></li>
-                </ul>
+            <li class="sidebar-header">
+                Admin Management
             </li>
             <li class="sidebar-item">
-                <a data-bs-target="#user" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">User</span>
+                <a data-bs-target="#adminStuff" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Admin & Stuff</span>
                 </a>
-                <ul id="user" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Sliders</a>
+                <ul id="adminStuff" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Manage Admin</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Depots</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Concern</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Add Admin</a></li>
                 </ul>
+            </li>
+
+            <li class="sidebar-item">
+                <a data-bs-target="#userMember" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">User & Member</span>
+                </a>
+                <ul id="userMember" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Manage Member</a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Add Member</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar-item">
+                <a data-bs-target="#rolePermission" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Role & Permission</span>
+                </a>
+                <ul id="rolePermission" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Admin Role</a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Admin Permission</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar-header">
+                Game Management
+            </li>
+
+            <li class="sidebar-item">
+                <a data-bs-target="#game" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Game</span>
+                </a>
+                <ul id="game" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Genre</a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Game</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar-header">
+                Report & Analytics 
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="fa-regular fa-building"></i> <span class="align-middle">Transaction History</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="fa-regular fa-building"></i> <span class="align-middle">Profite Loss</span>
+                </a>
+            </li>
+
+            <li class="sidebar-header">
+                System & Configuration
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="fa-regular fa-building"></i> <span class="align-middle">Miscellaneous</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="fa-regular fa-building"></i> <span class="align-middle">Notification</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="fa-regular fa-building"></i> <span class="align-middle">Massage</span>
+                </a>
             </li>
 
             {{-- <li class="sidebar-item">
-                <a class="sidebar-link" href="{{ route('message') }}">
-                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Message</span>
-                </a>
-            </li> --}}
-
-
-            <li class="sidebar-item">
                 <a href="{{ route('about') }}" class="sidebar-link">
                     <i class="fa-solid fa-user-tie"></i> <span class="align-middle">About Us</span>
                 </a>
-            </li>
+            </li> --}}
 
             <li class="sidebar-header">
                 Company Setup
