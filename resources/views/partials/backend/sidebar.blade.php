@@ -10,10 +10,10 @@
                 <path d="M20 16L12 20L4 16"></path>
             </svg>
         </a>
-        @php
+        {{-- @php
         $company = App\Models\Company::first();
-        @endphp
-        
+        @endphp --}}
+
         <div class="sidebar-user">
             <div class="d-flex justify-content-center">
                 <div class="flex-shrink-0"><a href="{{ route('admin.dashboard') }}">
@@ -24,16 +24,16 @@
                     <div class="dropdown-menu dropdown-menu-start">
                         <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
                                 data-feather="user"></i> Profile</a>
-                        <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                        <a class="dropdown-item" href="javascript:void(0);"><i class="align-middle me-1"
                                 data-feather="pie-chart"></i> Analytics</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1"
                                 data-feather="settings"></i> Settings &
                             Privacy</a>
-                        <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                        <a class="dropdown-item" href="javascript:void(0);"><i class="align-middle me-1"
                                 data-feather="help-circle"></i> Help Center</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Log out</a>
                     </div>
 
                 </div>
@@ -46,7 +46,7 @@
             </li>
             <li class="sidebar-item active">
                 <a href="{{ route('admin.dashboard') }}" class="sidebar-link">
-                    <i class="align-middle" data-feather="sliders"></i> 
+                    <i class="align-middle" data-feather="sliders"></i>
                     <span class="align-middle">Dashboards</span>
                 </a>
             </li>
@@ -58,9 +58,9 @@
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Admin & Stuff</span>
                 </a>
                 <ul id="adminStuff" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Manage Admin</a>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Manage Admin</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Add Admin</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Add Admin</a></li>
                 </ul>
             </li>
 
@@ -69,9 +69,9 @@
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">User & Member</span>
                 </a>
                 <ul id="userMember" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Manage Member</a>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Manage Member</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Add Member</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Add Member</a></li>
                 </ul>
             </li>
 
@@ -80,9 +80,9 @@
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Role & Permission</span>
                 </a>
                 <ul id="rolePermission" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Admin Role</a>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Admin Role</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Admin Permission</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Admin Permission</a></li>
                 </ul>
             </li>
 
@@ -95,22 +95,22 @@
                     <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Game</span>
                 </a>
                 <ul id="game" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Genre</a>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Genre</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Game</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="javascript:void(0);">Game</a></li>
                 </ul>
             </li>
 
             <li class="sidebar-header">
-                Report & Analytics 
+                Report & Analytics
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="javascript:void(0);">
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Transaction History</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="javascript:void(0);">
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Profite Loss</span>
                 </a>
             </li>
@@ -119,17 +119,17 @@
                 System & Configuration
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="javascript:void(0);">
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Miscellaneous</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="javascript:void(0);">
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Notification</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="javascript:void(0);">
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Massage</span>
                 </a>
             </li>
@@ -138,7 +138,7 @@
                 Company Setup
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="{{ route('admin.company') }}">
+                <a class="sidebar-link" href="javascript:void(0);" >
                     <i class="fa-regular fa-building"></i> <span class="align-middle">Company</span>
                 </a>
             </li>

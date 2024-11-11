@@ -23,6 +23,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return redirect()->route('admin.dashboard');
+});
+
 Route::get('/login', function () {
     // return view('welcome');
 });
@@ -40,30 +44,6 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('dashboard', [AuthenticatedSessionController::class, 'index'])->name('admin.dashboard');
-    Route::get('company', [CompanyController::class, 'index'])->name('admin.company');
-    Route::post('/company/update', [CompanyController::class, 'update'])->name('admin.company.update');
-
-
-    Route::get('about/', [AboutController::class, 'index'])->name('about');
-    Route::get('addAbout/', [AboutController::class, 'addAbout'])->name('addAbout');
-    Route::post('storeAbout/', [AboutController::class, 'storeAbout'])->name('store.about');
-    Route::post('/about/delete-image', [AboutController::class, 'deleteImage'])->name('delete.image');
-
-
-
-    Route::get('message', [MessageController::class, 'message'])->name('message');
-    Route::delete('delete/message/{message}', [MessageController::class, 'messageDelete'])->name('delete.message');
-
-    // Route::get('country', [CountryController::class, 'country'])->name('country');
-    Route::get('add/country', [CountryController::class, 'addCountry'])->name('add.country');
-    Route::post('store/image/country', [CountryController::class, 'storeImage'])->name('store.image.country');
-    Route::post('store/country', [CountryController::class, 'store'])->name('store.country');
-
-    Route::get('category', [CategoryController::class, 'category'])->name('category');
-    Route::get('addCategory', [CategoryController::class, 'addCategory'])->name('addCategory');
-    Route::post('store/category', [CategoryController::class, 'storeCategory'])->name('store.category');
-    Route::delete('delete/category/{id}', [CategoryController::class, 'deleteCategory'])->name('delete.category');
-
 });
 
 // Route::get('/home', [DashboardController::class, 'index'])->name('home');
